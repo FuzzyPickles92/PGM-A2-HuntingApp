@@ -31,8 +31,8 @@ namespace HuntingApp
 
             Dictionary<int, double> HuntingRates = new Dictionary<int, double>
             {
-                { 41, 50.0 },
-                { 51, 75.0 }
+                { 41, 25.12 }, // Updated hunt rate for Day shift
+                { 51, 6.55 }   // Updated hunt rate for Night shift
             };
 
             Console.WriteLine("Welcome to the Hunting App!");
@@ -119,10 +119,10 @@ namespace HuntingApp
             string highestHuntingRate = otherHuntRates.Count > 0 ? $"{otherHuntRates.Max():0.00}" : "N/A";
             Console.WriteLine($"Highest hunting rate (excluding day 1 hunts with 2+ days): ${highestHuntingRate}");
 
-
             //Thank you message.
             Console.WriteLine("\nThank you for using the Hunting App!");
         }
     }
 }
-//End of program.
+
+//End of program
